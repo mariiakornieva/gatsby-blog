@@ -267,6 +267,7 @@ body,
 
 .main-content {
   flex-grow: 1;
+  margin: 0 auto;
 }
 
 .global-footer {
@@ -318,18 +319,40 @@ body,
 
 .bio {
   display: flex;
-  margin-bottom: var(--spacing-16);
-}
-
-.bio p {
-  margin-bottom: var(--spacing-0);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .bio-avatar {
-  margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
   min-width: 50px;
   border-radius: 100%;
+}
+
+.bio-name {
+
+}
+
+.bio-summary {
+  margin-top: var(--spacing-0);
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  margin: var(--spacing-0);
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+.social-item {
+  margin: var(--spacing-0);
 }
 
 .blog-post header h1 {

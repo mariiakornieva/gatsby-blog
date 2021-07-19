@@ -5,10 +5,12 @@ module.exports = {
       name: `Mariia Kornieva`,
       summary: `Software Engineer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Mariia's personal website`,
+    siteUrl: `https://mariiakornieva.com/`,
     social: {
       twitter: `mariiakornieva`,
+      github: `mariiakornieva`,
+      linkedin: `mariiakornieva`,
     },
   },
   plugins: [
