@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `My Corner on the Internet`,
+    title: `Mariia Kornieva`,
     author: {
       name: `Mariia Kornieva`,
-      summary: ``,
+      summary: `Software Engineer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
@@ -51,12 +51,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
