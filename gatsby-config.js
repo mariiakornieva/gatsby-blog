@@ -11,6 +11,7 @@ module.exports = {
       twitter: `mariiakornieva`,
       github: `mariiakornieva`,
       linkedin: `mariiakornieva`,
+      substack: `mariiakornieva`,
     },
   },
   plugins: [
