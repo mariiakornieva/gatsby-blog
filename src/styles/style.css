@@ -267,7 +267,6 @@ body,
 
 .main-content {
   flex-grow: 1;
-  margin: 0 auto;
 }
 
 .global-footer {
@@ -307,14 +306,30 @@ body,
 .header-link {
   text-decoration: none;
   font-family: var(--font-heading);
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-2);
+  position: relative;
+}
+
+.header-link::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: var(--color-primary);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: width 500ms ease;
+}
+
+.header-link:hover::after {
+  width: 100%;
+  transition: width 300ms ease;
 }
 
 .header-link-home {
   font-weight: var(--fontWeight-bold);
-  font-family: var(--font-heading);
-  text-decoration: none;
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-3);
 }
 
 .bio {
@@ -353,6 +368,11 @@ body,
 
 .social-item {
   margin: var(--spacing-0);
+  transition: transform 300ms ease;
+}
+
+.social-item:hover {
+  transform: scale(1.15);
 }
 
 .blog-post header h1 {

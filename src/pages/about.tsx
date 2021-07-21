@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageProps, graphql } from "gatsby";
 import Layout from '../components/layout';
-import Seo from "../components/seo"
+import Seo from "../components/seo";
 
 const About = (props: PageProps) => {
   const siteTitle = props.data.site.siteMetadata?.title || `Title`;
@@ -10,7 +10,13 @@ const About = (props: PageProps) => {
     <Layout location={props.location} title={siteTitle}>
       <Seo title="About" />
       <h1>About</h1>
-      <iframe
+
+      <section>
+        <p>
+        </p>
+      </section>
+
+      {/* <iframe
         src="https://mariiakornieva.substack.com/embed"
         width="480"
         height="210"
@@ -22,7 +28,7 @@ const About = (props: PageProps) => {
         }}
         frameBorder="0"
         scrolling="no"
-      ></iframe>
+      ></iframe> */}
     </Layout>
   );
 };

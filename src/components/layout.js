@@ -7,22 +7,22 @@ const Layout = ({ location, title, children }) => {
 
   const header = (
     <>
-      <Link className="header-link-home" to="/">
+      <Link className="header-link header-link-home" to="/">
         {title}
       </Link>
 
       <span className="header-links">
-        <Link className="header-link" to="/about">
+        {/* <Link className="header-link" to="/about">
           About
-        </Link>
+        </Link> */}
 
         <Link className="header-link" to="/blog">
           Blog
         </Link>
 
-        <Link className="header-link" to="/projects">
+        {/* <Link className="header-link" to="/projects">
           My Projects
-        </Link>
+        </Link> */}
       </span>
     </>
   );
