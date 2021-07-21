@@ -10,6 +10,19 @@ const About = (props: PageProps) => {
     <Layout location={props.location} title={siteTitle}>
       <Seo title="About" />
       <h1>About</h1>
+      <iframe
+        src="https://mariiakornieva.substack.com/embed"
+        width="480"
+        height="210"
+        style={{
+          borderWidth: '1px',
+          borderStyle: 'solid',
+          borderColor: '#EEE',
+          background: 'white',
+        }}
+        frameBorder="0"
+        scrolling="no"
+      ></iframe>
     </Layout>
   );
 };
