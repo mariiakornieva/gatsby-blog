@@ -29,7 +29,6 @@ const Bio = () => {
     }
   `)
 
-  // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
@@ -39,7 +38,7 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/IMG_0101.jpg"
+        src="../images/prof-pic.png"
         width={250}
         height={250}
         quality={95}
@@ -67,11 +66,11 @@ const Bio = () => {
           </a>
         </li>
 
-        <li className="social-item">
+        {/* <li className="social-item">
           <a className="social-link" href={`https://${social?.substack + '.' || ``}substack.com`}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11L22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" fill="black" /></svg>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   )
