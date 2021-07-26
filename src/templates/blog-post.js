@@ -30,7 +30,19 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          {/* <Bio /> */}
+          {/* <iframe
+            src="https://mariiakornieva.substack.com/embed"
+            width="480"
+            height="210"
+            style={{
+              borderWidth: '1px',
+              borderStyle: 'solid',
+              borderColor: '#EEE',
+              background: 'white',
+            }}
+            frameBorder="0"
+            scrolling="no"
+          ></iframe> */}
         </footer>
       </article>
       <nav className="blog-post-nav">

@@ -2,9 +2,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
-  // const rootPath = `${__PATH_PREFIX__}/`
-  // const isRootPath = location.pathname === rootPath
-
   const header = (
     <>
       <Link className="header-link header-link-home" to="/">
@@ -12,9 +9,9 @@ const Layout = ({ location, title, children }) => {
       </Link>
 
       <span className="header-links">
-        {/* <Link className="header-link" to="/about">
+        <Link className="header-link" to="/about">
           About
-        </Link> */}
+        </Link>
 
         <Link className="header-link" to="/blog">
           Blog
@@ -32,7 +29,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main className="main-content">{children}</main>
       <footer className="global-footer">
-        © {new Date().getFullYear()}, Built with ❤️ by Mariia Kornieva
+        {'© '}{new Date().getFullYear()}{', Built with ❤️ by Mariia Kornieva'}
       </footer>
     </div>
   )

@@ -3,37 +3,37 @@ import { PageProps, graphql } from "gatsby";
 import Layout from '../components/layout';
 import Seo from "../components/seo";
 
-const About = (props: PageProps) => {
+const AboutPage = (props: PageProps) => {
   const siteTitle = props.data.site.siteMetadata?.title || `Title`;
 
   return (
     <Layout location={props.location} title={siteTitle}>
       <Seo title="About" />
-      <h1>About</h1>
+      <article
+        itemScope
+      >
+        <header>
+          <h1 itemProp="headline">About Me</h1>
+        </header>
 
-      <section>
-        <p>
-        </p>
-      </section>
+        <section>
+          <p>
+            Hi there! My name is Mariia and I am a software engineer based in Odesa, Ukraine.
+          </p>
 
-      {/* <iframe
-        src="https://mariiakornieva.substack.com/embed"
-        width="480"
-        height="210"
-        style={{
-          borderWidth: '1px',
-          borderStyle: 'solid',
-          borderColor: '#EEE',
-          background: 'white',
-        }}
-        frameBorder="0"
-        scrolling="no"
-      ></iframe> */}
+          <p>
+            I have been working as a software engineer since 2017 mostly with C++, some Python and a little bit of Java. Apart from that, I learned frontend technologies, namely HTML, CSS, Javascript, React and Redux to build web apps in my spare time. I enjoyed it so much that decided to switch into web development full-time in the future.
+          </p>
+          <p>
+            Speaking of education, I am taking BSc Computer Science degree at the University of London completely online. It allows me to have a full-time job while getting a world-class education.
+          </p>
+        </section>
+      </article>
     </Layout>
   );
 };
 
-export default About;
+export default AboutPage;
 
 export const pageQuery = graphql`
   query {
