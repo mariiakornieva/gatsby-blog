@@ -22,7 +22,7 @@ const AboutPage = (props: PageProps) => {
           </p>
 
           <p>
-            I have been working as a software engineer since 2017 mostly with C++, some Python and a little bit of Java. Apart from that, I learned frontend technologies, namely HTML, CSS, Javascript, React and Redux to build web apps in my spare time. I enjoyed it so much that decided to switch into web development full-time in the future.
+            I have been working as a software engineer since 2017 mostly with C++, some Python and a little bit of Java. Apart from that, I learned frontend technologies, namely HTML, CSS, Javascript, React and Redux to build web apps in my spare time.
           </p>
           <p>
             Speaking of education, I am taking BSc Computer Science degree at the University of London completely online. It allows me to have a full-time job while getting a world-class education.
