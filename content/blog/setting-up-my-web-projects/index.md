@@ -6,7 +6,7 @@ description: Important and often underestimated steps
 
 Whenever I start a new web app project I set up linter, prettier and git pre-commit hooks in the repository.
 
-I find these three tools to be crucial and vital to ensure the overall quality of the code. Unfortunately, I still see a lot of youtube videos out there that never mention the importance of setting up tooling before writing your first line of code. Fair enough, if your project is tiny and you're the only one working on it that might be ok. Otherwise, I would advocate for using these tools.
+I find these three tools to be vital to ensure the overall quality of the code. Unfortunately, I still see a lot of youtube videos out there that never mention the importance of setting up tooling before writing your first line of code. Fair enough, if your project is tiny and you're the only one working on it that might be ok. Otherwise, I would advocate for using these tools.
 
 Prettier, even being opinionated formatter, let's you not care about the formatting at all. Machine should do repetitive job, human should do creative job and solve business problems with the code they write. The philosophy of prettier and why it's become de-facto industry standard is making the formatting unified across the industry, so when you're switching from project to project you don't feel overwhelmed by unfamiliar formatting rules.
 
