@@ -1,9 +1,9 @@
 import React from 'react';
-import { PageProps, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from '../components/layout';
 import Seo from "../components/seo"
 
-const ProjectsPage = (props: PageProps) => {
+const ProjectsPage = (props) => {
   const siteTitle = props.data.site.siteMetadata?.title || `Title`;
 
   return (

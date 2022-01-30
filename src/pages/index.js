@@ -6,10 +6,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const Home = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <Seo title="Home" />
       <Bio />
     </Layout>

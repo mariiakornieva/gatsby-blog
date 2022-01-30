@@ -1,12 +1,18 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import logo from "../images/logo.png"
 
 const Layout = ({ location, title, children }) => {
   const header = (
     <>
-      <Link className="header-link header-link-home" to="/">
-        {title}
-      </Link>
+      <span className="header-links">
+        <Link className="header-link header-link-home" to="/">
+          <img src={logo} className="header-link-logo" alt="Mariia Kornieva" />
+          {(title &&
+            <span className="header-link-title">{title}</span>
+          )}
+        </Link>
+      </span>
 
       <span className="header-links">
         <Link className="header-link" to="/about">
